@@ -5,7 +5,7 @@ const Book = require("../models/book_model");
 // Setup multer untuk upload file
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'src/sampulbuku_upload/'); // Ubah nama direktori penyimpanan
+        cb(null, 'src/sampulbuku_upload/'); 
     },
     filename: (req, file, cb) => {
         cb(null, Date.now() + path.extname(file.originalname)); // Simpan dengan timestamp
