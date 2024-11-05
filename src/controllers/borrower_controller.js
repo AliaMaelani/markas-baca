@@ -51,7 +51,6 @@ exports.deleteBorrower = async (req, res) => {
     }
 };
 
-// Contoh fungsi untuk menambahkan buku yang dipinjam
 exports.addBorrowedBook = async (req, res) => {
     try {
         const borrower = await Borrower.findById(req.params.id);
